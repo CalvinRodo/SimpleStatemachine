@@ -1,0 +1,28 @@
+- ID: Start
+  Transitions:
+    - ID: O1
+      To: Q1
+- ID: Q1
+  Transitions:
+    - ID: O1
+      To: Q2
+    - ID: O2
+      To: Q3
+    - ID: O3
+      To: R1
+- ID: Q2
+  Transitions: 
+    - ID: O1
+      To: Q3
+    - ID: O2
+      To: R1
+    - ID: O3
+      To: R2
+- ID: Q3
+  Transitions: 
+    - ID: O1
+      To: R1
+    - ID: O2
+      To: R2
+    - ID: O3
+      To: R2
